@@ -17,3 +17,18 @@
 
 ### Como colocar para funcionar:
 
+1 - Clone o repositorio
+2 - Na raiz do projeto execute: `npm install`
+3 - Na raiz do projeto execute: `npm run dev`
+
+### Dependencias:
+
+- npm
+- node js
+
+### Creditos
+
+_Uso das logos de clubes_
+
+[logodetimes](https://logodetimes.com/)
+[futbox](https://www.futbox.com/)
