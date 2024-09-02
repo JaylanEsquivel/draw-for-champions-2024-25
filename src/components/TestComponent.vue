@@ -1,7 +1,6 @@
 <script setup>
 import myTrackSrc from "@assets/mp3/champions-league-anthem.mp3";
 import useTeamsUefa from "@composables/clubs/useTeamsUefa";
-import { onMounted } from "vue";
 
 defineProps({
   msg: String,
@@ -14,23 +13,9 @@ const playMusicChampions = () => {
 
   myTrack.play();
 };
-
-onMounted(() => {});
 </script>
 
 <template>
-    <q-toolbar class="bg-grey-9 text-white">
-      <q-btn flat round dense>
-        <q-icon name="menu" />
-      </q-btn>
-      <q-toolbar-title>
-        Toolbar
-      </q-toolbar-title>
-      <q-btn flat round dense>
-        <q-icon name="more_vert" />
-      </q-btn>
-    </q-toolbar>
-
   <h3>{{ msg }}</h3>
 
   <div class="q-pa-md example-row-equal-width">
@@ -57,7 +42,7 @@ onMounted(() => {});
   </ul>
 
   <div class="card">
-    <button type="button" @click="playMusicChampions">Entre no clima</button>
+    <q-btn type="button" class="q-btn bg-primary" @click="playMusicChampions">Entre no clima</q-btn>
   </div>
 
   <p class="read-the-docs">Clique no botão para testar</p>

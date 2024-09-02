@@ -1,19 +1,14 @@
 <script setup>
-import { onMounted } from 'vue';
-import HelloWorld from './components/HelloWorld.vue'
-
-onMounted(() => {
-  console.log(11111);
-  
-
-})
+import MainLayout from './layouts/MainLayout.vue';
+import HomePage from './pages/HomePage.vue';
 </script>
-<template>
-  
-  <HelloWorld msg="Champions League 24/25" />
 
+<template>
+  <MainLayout>
+    <HomePage />  
+  </MainLayout>
 </template>
 
-<style scoped>
+<style lang="sass">
 
 </style>
