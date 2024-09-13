@@ -2,3 +2,13 @@ body {
   background: rgb(16,8,93);
   background: linear-gradient(180deg, rgba(16,8,93,1) 0%, rgba(135,30,199,1) 100%);  
 }
+
+.fixed-buttons{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.read-the-docs {
+  color: #888;
+}
