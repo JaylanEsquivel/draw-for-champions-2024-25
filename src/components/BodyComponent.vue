@@ -2,12 +2,15 @@
 import myTrackSrc from "@assets/mp3/champions-league-anthem.mp3";
 import logoChampions from "@assets/img/utils/logo-champions.png";
 import useTeamsUefa from "@composables/clubs/useTeamsUefa";
+import useTeamDraw from "@composables/useTeamDraw";
 
 defineProps({
   msg: String,
 });
 
 const { teams, translatePotName } = useTeamsUefa();
+const { clubRaffle } = useTeamDraw();
+
 const playMusicChampions = () => {
   const myTrack = new Audio(myTrackSrc);
 
@@ -73,12 +76,13 @@ const playMusicChampions = () => {
     </div>
   </section>
   <section class="row fixed-buttons">
-    <div class="q-pa-lg q-gutter-md">
+    <div class="q-pa-lg q-mr-lg q-gutter-md">
       <q-btn 
         round 
         size="20px"
         color="primary" 
-        icon="check_circle">
+        icon="check_circle"
+        @click="clubRaffle(teams)" >
           <q-tooltip anchor="top middle" self="bottom middle" :offset="[10, 10]">
             <strong>Selecionar Time</strong>
           </q-tooltip>        

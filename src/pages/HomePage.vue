@@ -1,10 +1,6 @@
 <script setup>
-import TestComponent from '@components/TestComponent.vue'
+import BodyComponent from '@components/BodyComponent.vue'
 </script>
 <template>
-  <TestComponent msg="Champions League 24/25" />
+  <BodyComponent msg="Champions League 24/25" />
 </template>
-
-<style scoped>
-
-</style>
